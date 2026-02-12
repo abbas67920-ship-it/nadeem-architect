@@ -2,22 +2,63 @@
 <html>
 <head>
 <title>Nadeem Architect</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-body{
-font-family: Arial;
-text-align:center;
-background:#111;
-color:white;
-padding-top:100px;
-}
-h1{font-size:50px;}
-p{font-size:22px;}
+body{margin:0;font-family:Arial;background:#f5f5f5}
+header{background:#111;color:white;padding:20px;text-align:center}
+.hero{
+background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+height:300px;background-size:cover;color:white;
+display:flex;justify-content:center;align-items:center;
+font-size:28px;font-weight:bold;text-align:center;padding:20px}
+.section{padding:40px;text-align:center}
+.services{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.box{background:white;padding:20px;width:200px;border-radius:10px;box-shadow:0 0 10px #ccc}
+.gallery{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.gallery img{width:300px;border-radius:10px}
+.whatsapp{
+position:fixed;bottom:20px;right:20px;background:#25D366;
+color:white;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:bold}
+footer{background:#111;color:white;text-align:center;padding:20px}
 </style>
 </head>
+
 <body>
 
+<header>
 <h1>Nadeem Architect</h1>
-<p>Welcome to my architecture website</p>
+<p>Modern Architecture & 3D Design Studio</p>
+</header>
+
+<div class="hero">
+We Design Your Dream Home
+</div>
+
+<div class="section">
+<h2>Our Services</h2>
+<div class="services">
+<div class="box">2D Floor Plans</div>
+<div class="box">3D Elevation</div>
+<div class="box">Interior Design</div>
+<div class="box">Exterior Rendering</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Our Projects</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+<img src="https://images.unsplash.com/photo-1600047509782-20d39509f26b">
+</div>
+</div>
+
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX">WhatsApp</a>
+
+<footer>
+<p>© Nadeem Architect</p>
+</footer>
 
 </body>
 </html>
