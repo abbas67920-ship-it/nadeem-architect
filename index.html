@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>Nadeem Architect</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 <style>
 body{margin:0;font-family:Arial;background:#f5f5f5;color:#111;}
 header{background:#111;color:white;padding:20px;text-align:center;}
 .hero{
-background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
-height:300px;background-size:cover;color:white;
-display:flex;justify-content:center;align-items:center;
-font-size:28px;font-weight:bold;text-align:center;padding:20px;
-}
+background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover no-repeat;
+height:300px;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+animation: fadein 2s;}
+@keyframes fadein {from{opacity:0;}to{opacity:1;}}
+.hero h1{font-size:32px;margin:0;}
+.hero p{font-size:18px;margin-top:10px;}
+
 .section{padding:40px;text-align:center;}
 .services{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
-.box{background:white;padding:20px;width:200px;border-radius:10px;box-shadow:0 0 10px #ccc;}
+.box{background:white;padding:20px;width:200px;border-radius:10px;box-shadow:0 0 10px #ccc;transition: transform 0.3s;}
+.box:hover{transform: scale(1.05);}
+.box i{font-size:32px;margin-bottom:10px;color:#111;}
 .gallery{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
-.gallery img{width:300px;border-radius:10px;}
-.whatsapp{
-position:fixed;bottom:20px;right:20px;background:#25D366;
-color:white;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:bold;}
+.gallery img{width:300px;border-radius:10px;transition: transform 0.3s; cursor:pointer;}
+.gallery img:hover{transform: scale(1.1);}
 form input, form textarea{padding:10px;width:250px;margin-bottom:10px;}
 form button{padding:10px 20px;background:#111;color:white;border:none;cursor:pointer;}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:bold;}
 footer{background:#111;color:white;text-align:center;padding:20px;}
+footer a{color:white;margin:0 10px;text-decoration:none;}
+footer p{margin:5px 0;}
 </style>
 </head>
 
@@ -35,16 +43,17 @@ footer{background:#111;color:white;text-align:center;padding:20px;}
 </header>
 
 <div class="hero">
-We Design Your Dream Home
+<h1>We Design Your Dream Home</h1>
+<p>3D Renderings | Floor Plans | Interior Design</p>
 </div>
 
 <div class="section">
 <h2>Our Services</h2>
 <div class="services">
-<div class="box">2D Floor Plans</div>
-<div class="box">3D Elevation</div>
-<div class="box">Interior Design</div>
-<div class="box">Exterior Rendering</div>
+<div class="box"><i class="fas fa-home"></i><p>2D Floor Plans</p></div>
+<div class="box"><i class="fas fa-project-diagram"></i><p>3D Elevation</p></div>
+<div class="box"><i class="fas fa-couch"></i><p>Interior Design</p></div>
+<div class="box"><i class="fas fa-building"></i><p>Exterior Rendering</p></div>
 </div>
 </div>
 
@@ -57,7 +66,7 @@ We Design Your Dream Home
 
 <div class="section">
 <h2>Contact Us</h2>
-<form action="https://formspree.io/f/mkovjqdo" method="POST">
+<form action="https://formspree.io/f/mzzvrdza" method="POST">
 <input type="text" name="name" placeholder="Your Name" required><br>
 <input type="email" name="email" placeholder="Your Email" required><br>
 <textarea name="message" placeholder="Your Message" required></textarea><br>
@@ -69,6 +78,11 @@ We Design Your Dream Home
 
 <footer>
 <p>© Nadeem Architect</p>
+<p>Follow us:</p>
+<a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+<p>Modern architecture & 3D design studio based in India</p>
 </footer>
 
 </body>
